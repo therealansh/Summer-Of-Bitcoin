@@ -6,9 +6,8 @@ use std::io::Write;
 Intuition: The problem is very similar to 0-1 Knapsack in a way.
            We need to maximize the fee while constraining the weight to HIGHEST_WT i.e. minimizing the weight.
            So to order the records we can sort it according to the ratio of fee/wt.
-           Also if there is a unknown parent transaction we simply reject it.
+           Also if there is an unknown parent transaction we simply reject it.
 */
-
 
 const HIGHEST_WT: i64 = 4000000;
 
